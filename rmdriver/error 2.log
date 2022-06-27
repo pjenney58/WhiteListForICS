@@ -1,0 +1,29 @@
+/opt/aerolock/rmdriver/__aerolock_inclusive.c: In function ‘__handoff_to_daemon’:
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:869:35: warning: missing terminating " character [enabled by default]
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:872:35: warning: missing terminating " character [enabled by default]
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:1429:47: warning: missing terminating " character [enabled by default]
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:1432:43: warning: missing terminating " character [enabled by default]
+In file included from /opt/aerolock/rmdriver/__aerolock_inclusive.c:1951:0:
+include/generated/utsrelease.h:1:0: error: unterminated argument list invoking macro "rmi_trace"
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:869:13: error: ‘rmi_trace’ undeclared (first use in this function)
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:869:13: note: each undeclared identifier is reported only once for each function it appears in
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:1953:1: error: expected ‘;’ before ‘static’
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:2068:1: error: invalid storage class for function ‘__exittest’
+/opt/aerolock/rmdriver/__aerolock_inclusive.c: In function ‘__exittest’:
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:2068:1: error: ‘aerolock_exit_module’ undeclared (first use in this function)
+/opt/aerolock/rmdriver/__aerolock_inclusive.c: In function ‘__handoff_to_daemon’:
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:2068:1: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:2068:1: warning: ‘alias’ attribute ignored [-Wattributes]
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:2069:1: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:2070:1: error: expected declaration or statement at end of input
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:2070:1: error: expected declaration or statement at end of input
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:2070:1: error: expected declaration or statement at end of input
+/opt/aerolock/rmdriver/__aerolock_inclusive.c: At top level:
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:50:21: warning: ‘__kill_fifo’ defined but not used [-Wunused-variable]
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:91:12: warning: ‘__open_count’ defined but not used [-Wunused-variable]
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:95:22: warning: ‘c_dev’ defined but not used [-Wunused-variable]
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:96:22: warning: ‘cl’ defined but not used [-Wunused-variable]
+/opt/aerolock/rmdriver/__aerolock_inclusive.c:97:22: warning: ‘first’ defined but not used [-Wunused-variable]
+make[2]: *** [/opt/aerolock/rmdriver/__aerolock_inclusive.o] Error 1
+make[1]: *** [_module_/opt/aerolock/rmdriver] Error 2
+make: *** [MODULE.o] Error 2
