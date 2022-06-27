@@ -1,0 +1,35 @@
+# To build the module type: 
+#	make
+# To load the module type: 
+#	make load
+# To unload the module type: 
+#	make unload
+# To clean the directory type:
+#	make clean
+# 
+
+#ifeq($(PLATFORM),cohda)
+#KDIR := /usr/src/kernels/linux-headers-2.6.28-6-versatile
+#else
+KDIR := /lib/modules/$(shell uname -r)/build
+#endif
+
+PWD := $(shell pwd)
+
+MODULE := aerolock
+obj-m := $(MODULE).o
+$(MODULE)-objs += aerolock.o
+
+MODULE.o:
+	$(MAKE) -C $(KDIR) M=$(PWD) modules
+
+load:
+	# load module passing
+	sudo insmod ./$(MODULE).ko
+
+unload:
+	sudo rmmod $(MODULE)
+
+clean:
+	-@rm -fr *.o $(MODULE)*.o $(MODULE)*.ko *.mod.* *.order *.symvers *.markers *.*~ *~ .*.cmd .tmp_versions
+
