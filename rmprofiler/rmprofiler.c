@@ -169,7 +169,7 @@ int8_t* __get_cmdline(pid_t __pid, int8_t* __cmd_line)
     	goto out;
     }
 
-    snprintf(__buf, sizeof(__buf), "/etc/%d/cmd", (int32_t)__pid);
+    snprintf(__buf, PATH_MAX, "/etc/%d/cmd", (int32_t)__pid);
 
     if(stat(__buf, &__sb) == -1)
     {

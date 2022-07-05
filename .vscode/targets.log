@@ -1,18 +1,12 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 3.81
-# Copyright (C) 2006  Free Software Foundation, Inc.
-# This is free software; see the source for copying conditions.
-# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
 
-# This program built for i386-apple-darwin11.3.0
- 
-/bin/sh: lsmod: command not found
-
-make: *** No rule to make target `/Users/pjenney/Documents/GitHub/aerolock/rmprofiler/rmprofiler.o', needed by `rmprofiler'.  Stop.
-
-
-# Make data base, printed on Mon Jun 27 08:42:09 2022
+# Make data base, printed on Thu Jun 30 20:18:41 2022
 
 # Variables
 
@@ -21,7 +15,10 @@ make: *** No rule to make target `/Users/pjenney/Documents/GitHub/aerolock/rmpro
 # automatic
 ?F = $(notdir $?)
 # environment
- 
+WSLENV = ELECTRON_RUN_AS_NODE/w:
+# default
+.SHELLFLAGS := -c
+# environment
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
@@ -30,173 +27,183 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/pjenney/Documents/GitHub/aerolock
+CURDIR := /home/petej/repos/WhiteListForICS
 # makefile
 SHELL = /bin/sh
-# makefile (from `Makefile', line 18)
+# makefile (from 'Makefile', line 18)
 COMMON = signature.o utilities.o list.o rbtree.o parse.o
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /usr/bin/make
-# makefile (from `Makefile', line 36)
-CFLAGS = $(INCLUDE) $(DEBUG) $(RELEASE) -D__QNX__
-# makefile (from `Makefile', line 45)
+_ = /mnt/c/Program Files/Microsoft VS Code/bin/code
+# makefile (from 'Makefile', line 34)
+CFLAGS = $(INCLUDE) $(DEBUG) $(RELEASE) -fpic -std=c99 -pedantic -D_GNU_SOURCE -D__LINUX__
+# makefile (from 'Makefile', line 45)
 OBJECTS_FOR_DEPENDS = $(SOURCES_FOR_DEPENDS:.c=.o)
-# makefile (from `Makefile', line 1)
+# makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# makefile (from `Makefile', line 19)
+# makefile (from 'Makefile', line 19)
 OBJS_FOR_DEPENDS = libcache.o mlocatecache.o $(CRYPTO) $(DB)
-# makefile (from `Makefile', line 24)
+# makefile (from 'Makefile', line 24)
 DEBUG = -O0 -g3 -Wall
-# makefile (from `Makefile', line 39)
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 39)
 SOURCES = $(NDIR)/src/ntru_crypto_hash.c $(NDIR)/src/ntru_crypto_hmac.c $(NDIR)/src/ntru_crypto_msbyte_uint32.c $(NDIR)/src/ntru_crypto_sha1.c $(NDIR)/src/ntru_crypto_sha2.c $(NDIR)/src/ntru_crypto_sha256.c $(CDIR)/signature.c $(CDIR)/utilities.c $(CDIR)/list.c $(CDIR)/db.c $(CDIR)/rbtree.c $(CDIR)/parse.c
 # environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
 VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 22)
+OBJS = $(CRYPTO) $(DB) $(COMMON)
 # environment
-__CFBundleIdentifier = com.microsoft.VSCode
+LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/gw/z38dt53x5xx45bf01tk2q_0w0000gn/T/vscode-ipc-9fc1e3e6-4f1e-49db-bf2d-31ab817a0060.sock
-# environment
-VSCODE_CWD = /
-# makefile (from `Makefile', line 44)
+VSCODE_CWD = /mnt/c/Program Files/Microsoft VS Code
+# makefile (from 'Makefile', line 44)
 OBJECTS2 = $(SOURCES2:.c=.o)
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin
-# environment
-GOPATH = ”/Users/pjenney/Projects/Go”
-# makefile (from `Makefile', line 121)
-UBUNTU :=        0
-# makefile (from `Makefile', line 41)
+PATH = /home/petej/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/Extensions/Microsoft/IntelliCode/CLI:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.30.30705/bin/HostX86/x86:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/VC/VCPackages:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/CommonExtensions/Microsoft/TestWindow:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/bin/Roslyn:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Team Tools/Performance Tools:/mnt/c/Program Files (x86)/Microsoft Visual Studio/Shared/Common/VSPerfCollectionTools/vs2019/:/mnt/c/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22000.0/x86:/mnt/c/Program Files (x86)/Windows Kits/10/bin/x86:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64:/mnt/c/Windows/Microsoft.NET/Framework/v4.0.30319:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Common7/Tools/:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files (x86)/WiX Toolset v3.11/bin:/mnt/c/Certificates:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/Microsoft/Web Platform Installer/:/mnt/c/Program Files/Microsoft Service Fabric/bin/Fabric/Fabric.Code:/mnt/c/Program Files/Microsoft SDKs/Service Fabric/Tools/ServiceFabricLocalClusterManager:/mnt/c/Program Files/PostgreSQL/14/bin:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Batch:/mnt/c/Users/petej/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/WiX Toolset v3.11/bin:/mnt/c/Users/petej/AppData/Local/GitHubDesktop/bin:/mnt/c/SandDriftSoftware/Repos/Medicine-On-Time/CleanMotNextDev/NewMOT/NewMOT/packages/Clowd.Squirrel.2.8.1-pre/tools:/mnt/c/Users/petej/.nuget/packages/clowd.squirrel/2.8.1-pre/tools:/mnt/c/Users/petej/.dotnet/tools:/mnt/c/Users/petej/AppData/Roaming/npm:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja:/mnt/c/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/VC/Linux/bin/ConnectionManagerExe:/snap/bin:/home/petej/.dotnet/tools
+# makefile (from 'Makefile', line 121)
+UBUNTU := 0
+# makefile (from 'Makefile', line 41)
 SOURCES_FOR_DEPENDS = $(NDIR)/src/ntru_crypto_hash.c $(NDIR)/src/ntru_crypto_hmac.c $(NDIR)/src/ntru_crypto_msbyte_uint32.c $(NDIR)/src/ntru_crypto_sha1.c $(NDIR)/src/ntru_crypto_sha2.c $(NDIR)/src/ntru_crypto_sha256.c $(CDIR)/libcache.c $(CDIR)/mlocatecache.c $(CDIR)/db.c 
-# makefile (from `Makefile', line 71)
+# makefile (from 'Makefile', line 71)
 ARM = $(RDIR)/arm
-# makefile (from `Makefile', line 17)
+# makefile (from 'Makefile', line 17)
 DB = db.o
 # environment
 VSCODE_LOG_STACK = false
 # environment
-ELECTRON_RUN_AS_NODE = 1
-# makefile (from `Makefile', line 30)
-LDFLAGS = 
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-1aa456cf-bfb8-446b-b600-4995c205a659.sock
+# makefile (from 'Makefile', line 28)
+LDFLAGS = -lpthread -ldl -lrt -ldb
 # default
-.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.uZA1r506a1/Listeners
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # automatic
 %F = $(notdir $%)
-# makefile (from `Makefile', line 9)
+# makefile (from 'Makefile', line 9)
 CDIR = $(RDIR)/common
 # environment
 VSCODE_PIPE_LOGGING = true
-# makefile (from `Makefile', line 22)
-OBJS = $(CRYPTO) $(DB) $(COMMON)
 # environment
-PWD = /Users/pjenney/Documents/GitHub/aerolock
-# makefile (from `Makefile', line 12)
+PWD = /home/petej/repos/WhiteListForICS
+# makefile (from 'Makefile', line 12)
 DDIR = $(RDIR)/rmdriver
-# makefile (from `Makefile', line 120)
-DLOADED :=        0
-# makefile (from `Makefile', line 40)
+# default
+.LOADED := 
+# makefile (from 'Makefile', line 120)
+DLOADED := 0
+# makefile (from 'Makefile', line 40)
 SOURCES2 = $(NDIR)/src/ntru_crypto_hash.c $(NDIR)/src/ntru_crypto_hmac.c $(NDIR)/src/ntru_crypto_msbyte_uint32.c $(NDIR)/src/ntru_crypto_sha1.c $(NDIR)/src/ntru_crypto_sha2.c $(NDIR)/src/ntru_crypto_sha256.c $(CDIR)/signature.o $(CDIR)/utilities.o $(CDIR)/list.c $(CDIR)/db.c $(CDIR)/rbtree.c $(CDIR)/parse.c
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+WSL_INTEROP = /run/WSL/8_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /Users/pjenney
-# default
-MAKEFILEPATH := /Users/pjenney/Downloads/Xcode-beta.app/Contents/Developer/Makefiles
+HOME = /home/petej
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/pjenney/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-LOGNAME = pjenney
+LOGNAME = petej
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# makefile (from `Makefile', line 11)
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from 'Makefile', line 11)
 IDIR = $(RDIR)/install
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
-# makefile (from `Makefile', line 70)
-X86 = $(RDIR)/x86
 # environment
-XPC_FLAGS = 0x0
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 70)
+X86 = $(RDIR)/x86
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 2
-# makefile (from `Makefile', line 10)
+SHLVL = 1
+# makefile (from 'Makefile', line 10)
 NDIR = $(RDIR)/NTRUEncrypt
 # default
-MAKE_VERSION := 3.81
+MAKE_VERSION := 4.2.1
 # environment
-USER = pjenney
+USER = petej
 # makefile
 .DEFAULT_GOAL := all
-# makefile (from `Makefile', line 14)
+# makefile (from 'Makefile', line 14)
 INCLUDE = -I$(NDIR)/include -I$(NDIR)/src -I$(CDIR)
+# environment
+NAME = Code
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# makefile (from `Makefile', line 8)
-RDIR := /Users/pjenney/Documents/GitHub/aerolock
+# makefile (from 'Makefile', line 8)
+RDIR := /home/petej/repos/WhiteListForICS
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/petej/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
 # default
-MAKE_COMMAND := /Users/pjenney/Downloads/Xcode-beta.app/Contents/Developer/usr/bin/make
-# makefile (from `Makefile', line 16)
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 16)
 CRYPTO = ntru_crypto_hash.o ntru_crypto_hmac.o ntru_crypto_msbyte_uint32.o ntru_crypto_sha1.o ntru_crypto_sha2.o ntru_crypto_sha256.o 
 # default
 .VARIABLES := 
-# environment
-TMPDIR = /var/folders/gw/z38dt53x5xx45bf01tk2q_0w0000gn/T/
 # automatic
 *F = $(notdir $*)
-# makefile (from `Makefile', line 6)
-OS := Darwin
-# environment
-VSCODE_IPC_HOOK = /Users/pjenney/Library/Application Support/Code/1.68.1-main.sock
-# makefile (from `Makefile', line 5)
-ARCH := i386
+# makefile (from 'Makefile', line 6)
+OS := Linux
+# makefile (from 'Makefile', line 5)
+ARCH := x86_64
 # makefile
-MAKEFLAGS = Rrqp
+MAKEFLAGS = pqrR
 # environment
-MFLAGS = -Rrqp
+MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
-# environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.8740722482.8740724165
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
 # environment
-__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
-# environment
-COMMAND_MODE = unix2003
+VSCODE_HANDLES_SIGPIPE = true
+# 'override' directive
+.SHELLSTATUS := 0
 # default
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
 # environment
 LC_ALL = C
+# environment
+HOSTTYPE = x86_64
 # automatic
 ^F = $(notdir $^)
+# makefile (from 'Makefile', line 62)
+CHIP = $(X86)
 # default
 SUFFIXES := 
 # default
-.INCLUDE_DIRS = /usr/local/include
-# environment
-MAKELEVEL := 0
-# makefile (from `Makefile', line 43)
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 43)
 OBJECTS = $(SOURCES:.c=.o)
 # environment
 LANG = C
 # environment
-VSCODE_PID = 70071
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu-20.04
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=89/1024=9%, Rehash=0, Collisions=4/339=1%
+# Load=96/1024=9%, Rehash=0, Collisions=9/401=2%
 
 # Pattern-specific Variable Values
 
@@ -204,9 +211,9 @@ VSCODE_PID = 70071
 
 # Directories
 
-# . (device 16777220, inode 8740768898): 28 files, no impossibilities.
+# . (device 2064, inode 45477): 26 files, no impossibilities.
 
-# 28 files, no impossibilities in 1 directories.
+# 26 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -215,100 +222,75 @@ VSCODE_PID = 70071
 # Files
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hash.o:
+/home/petej/repos/WhiteListForICS/rmtools/rmdumpdb.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-rmdepends: /Users/pjenney/Documents/GitHub/aerolock/rmtools/rmdepends.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hash.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hmac.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha1.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha2.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha256.o /Users/pjenney/Documents/GitHub/aerolock/common/libcache.o /Users/pjenney/Documents/GitHub/aerolock/common/mlocatecache.o /Users/pjenney/Documents/GitHub/aerolock/common/db.o /Users/pjenney/Documents/GitHub/aerolock/common/aerolock.h
+rmdepends: /home/petej/repos/WhiteListForICS/rmtools/rmdepends.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o /home/petej/repos/WhiteListForICS/common/libcache.o /home/petej/repos/WhiteListForICS/common/mlocatecache.o /home/petej/repos/WhiteListForICS/common/db.o /home/petej/repos/WhiteListForICS/common/aerolock.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 101):
+#  recipe to execute (from 'Makefile', line 101):
 	$(CC) $(CFLAGS) $(OBJECTS_FOR_DEPENDS) $(RDIR)/rmtools/rmdepends.o -o $(CHIP)/$@ $(LDFLAGS)
-	
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/rmhmac/rmhmac.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.490318628
+#  File has been updated.
+#  Successfully updated.
 
- 
-aerolockd: /Users/pjenney/Documents/GitHub/aerolock/rmenforcer/rmenforcer.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hash.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hmac.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha1.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha2.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha256.o /Users/pjenney/Documents/GitHub/aerolock/common/signature.o /Users/pjenney/Documents/GitHub/aerolock/common/utilities.o /Users/pjenney/Documents/GitHub/aerolock/common/list.o /Users/pjenney/Documents/GitHub/aerolock/common/db.o /Users/pjenney/Documents/GitHub/aerolock/common/rbtree.o /Users/pjenney/Documents/GitHub/aerolock/common/parse.o /Users/pjenney/Documents/GitHub/aerolock/common/aerolock.h
+aerolockd: /home/petej/repos/WhiteListForICS/rmenforcer/rmenforcer.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o /home/petej/repos/WhiteListForICS/common/signature.o /home/petej/repos/WhiteListForICS/common/utilities.o /home/petej/repos/WhiteListForICS/common/list.o /home/petej/repos/WhiteListForICS/common/db.o /home/petej/repos/WhiteListForICS/common/rbtree.o /home/petej/repos/WhiteListForICS/common/parse.o /home/petej/repos/WhiteListForICS/common/aerolock.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 92):
+#  recipe to execute (from 'Makefile', line 92):
 	$(CC) $(CFLAGS) $(OBJECTS) $(RDIR)/rmenforcer/rmenforcer.o -o $(CHIP)/$@ $(LDFLAGS)
-	
 
 .PHONEY: clean release deploy remove
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/rmtools/rmdepends.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 all: rmprofiler aerolockd rmsetup rmhmac rmverify rmdepends rmdumpdb
-#  Command-line target.
+#  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/45=0%
 
-# Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/rmprofiler/rmprofiler.o:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-# Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/rmsetup/rmsetup.o:
+rmstart: /home/petej/repos/WhiteListForICS/rmtools/rmstart.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-rmstart: /Users/pjenney/Documents/GitHub/aerolock/rmtools/rmstart.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 107):
+#  recipe to execute (from 'Makefile', line 107):
 	$(CC) $(CFLAGS) $(OBJECTS) $(RDIR)/rmtools/rmstart.o -o $(CHIP)/$@ $(LDFLAGS)
+ 
 	
 
-rmdumpdb: /Users/pjenney/Documents/GitHub/aerolock/rmtools/rmdumpdb.o /Users/pjenney/Documents/GitHub/aerolock/common/aerolock.h
+rmdumpdb: /home/petej/repos/WhiteListForICS/rmtools/rmdumpdb.o /home/petej/repos/WhiteListForICS/common/aerolock.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 104):
+#  recipe to execute (from 'Makefile', line 104):
 	$(CC) $(CFLAGS) $(OBJECTS) $(RDIR)/rmtools/rmdumpdb.o -o $(CHIP)/$@ $(LDFLAGS)
-	
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/rmtools/rmstart.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.550318627
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/common/list.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/rmtools/rmdumpdb.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/petej/repos/WhiteListForICS/common/aerolock.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-29 09:36:48.2674953
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 .SUFFIXES:
@@ -317,19 +299,24 @@ rmdumpdb: /Users/pjenney/Documents/GitHub/aerolock/rmtools/rmdumpdb.o /Users/pje
 #  File has not been updated.
 
 # Not a target:
-Makefile:
+/home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o:
 #  Implicit rule search has been done.
-#  Last modified 2014-12-19 09:38:30
+#  Last modified 2022-06-30 15:36:35.650318626
 #  File has been updated.
 #  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-29 09:36:48.2181225
+#  File has been updated.
+#  Successfully updated.
 
 remove:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 192):
+#  recipe to execute (from 'Makefile', line 192):
 	sudo /etc/init.d/aerolock stop 
 	sudo update-rc.d -f aerolock remove
 	sudo rm -f /etc/init.d/aerolock
@@ -339,7 +326,7 @@ remove:
 	
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hmac.o:
+/home/petej/repos/WhiteListForICS/rmverify/rmverify.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -348,76 +335,112 @@ update:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 202):
+#  recipe to execute (from 'Makefile', line 202):
 	sudo /etc/init.d/aerolock stop
 	sudo update-rc.d -f aerolock remove
 	#release
 	sudo update-rc.d aerolock defaults
 	sudo /etc/init.d/aerolock start
-	
 
-rmhmac: /Users/pjenney/Documents/GitHub/aerolock/rmhmac/rmhmac.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hash.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hmac.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha1.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha2.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha256.o /Users/pjenney/Documents/GitHub/aerolock/common/signature.o /Users/pjenney/Documents/GitHub/aerolock/common/utilities.o /Users/pjenney/Documents/GitHub/aerolock/common/list.o /Users/pjenney/Documents/GitHub/aerolock/common/db.o /Users/pjenney/Documents/GitHub/aerolock/common/rbtree.o /Users/pjenney/Documents/GitHub/aerolock/common/parse.o /Users/pjenney/Documents/GitHub/aerolock/common/aerolock.h
+rmhmac: /home/petej/repos/WhiteListForICS/rmhmac/rmhmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o /home/petej/repos/WhiteListForICS/common/signature.o /home/petej/repos/WhiteListForICS/common/utilities.o /home/petej/repos/WhiteListForICS/common/list.o /home/petej/repos/WhiteListForICS/common/db.o /home/petej/repos/WhiteListForICS/common/rbtree.o /home/petej/repos/WhiteListForICS/common/parse.o /home/petej/repos/WhiteListForICS/common/aerolock.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 95):
+#  recipe to execute (from 'Makefile', line 95):
 	$(CC) $(CFLAGS) $(OBJECTS) $(RDIR)/rmhmac/rmhmac.o -o $(CHIP)/$@ $(LDFLAGS)
-	
-
-rmprofiler: /Users/pjenney/Documents/GitHub/aerolock/rmprofiler/rmprofiler.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hash.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hmac.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha1.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha2.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha256.o /Users/pjenney/Documents/GitHub/aerolock/common/signature.o /Users/pjenney/Documents/GitHub/aerolock/common/utilities.o /Users/pjenney/Documents/GitHub/aerolock/common/list.o /Users/pjenney/Documents/GitHub/aerolock/common/db.o /Users/pjenney/Documents/GitHub/aerolock/common/rbtree.o /Users/pjenney/Documents/GitHub/aerolock/common/parse.o /Users/pjenney/Documents/GitHub/aerolock/common/aerolock.h
-#  Implicit rule search has not been done.
-#  Last modified 2022-06-27 08:31:52
-#  File has not been updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 89):
-	$(CC) $(CFLAGS) $(OBJECTS) $(RDIR)/rmprofiler/rmprofiler.o -o $(CHIP)/$@ $(LDFLAGS)
-	
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha1.o:
+/home/petej/repos/WhiteListForICS/common/mlocatecache.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+rmprofiler: /home/petej/repos/WhiteListForICS/rmprofiler/rmprofiler.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o /home/petej/repos/WhiteListForICS/common/signature.o /home/petej/repos/WhiteListForICS/common/utilities.o /home/petej/repos/WhiteListForICS/common/list.o /home/petej/repos/WhiteListForICS/common/db.o /home/petej/repos/WhiteListForICS/common/rbtree.o /home/petej/repos/WhiteListForICS/common/parse.o /home/petej/repos/WhiteListForICS/common/aerolock.h
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  Last modified 2022-06-30 15:36:35.400318628
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := rmprofiler
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := /home/petej/repos/WhiteListForICS/rmprofiler/rmprofiler.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o /home/petej/repos/WhiteListForICS/common/signature.o /home/petej/repos/WhiteListForICS/common/utilities.o /home/petej/repos/WhiteListForICS/common/list.o /home/petej/repos/WhiteListForICS/common/db.o /home/petej/repos/WhiteListForICS/common/rbtree.o /home/petej/repos/WhiteListForICS/common/parse.o /home/petej/repos/WhiteListForICS/common/aerolock.h
+# automatic
+# | := 
+# automatic
+# < := /home/petej/repos/WhiteListForICS/rmprofiler/rmprofiler.o
+# automatic
+# ^ := /home/petej/repos/WhiteListForICS/rmprofiler/rmprofiler.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o /home/petej/repos/WhiteListForICS/common/signature.o /home/petej/repos/WhiteListForICS/common/utilities.o /home/petej/repos/WhiteListForICS/common/list.o /home/petej/repos/WhiteListForICS/common/db.o /home/petej/repos/WhiteListForICS/common/rbtree.o /home/petej/repos/WhiteListForICS/common/parse.o /home/petej/repos/WhiteListForICS/common/aerolock.h
+# automatic
+# ? := /home/petej/repos/WhiteListForICS/rmprofiler/rmprofiler.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o /home/petej/repos/WhiteListForICS/common/signature.o /home/petej/repos/WhiteListForICS/common/utilities.o /home/petej/repos/WhiteListForICS/common/list.o /home/petej/repos/WhiteListForICS/common/db.o /home/petej/repos/WhiteListForICS/common/rbtree.o /home/petej/repos/WhiteListForICS/common/parse.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=5/54=9%
+#  recipe to execute (from 'Makefile', line 89):
+	$(CC) $(CFLAGS) $(OBJECTS) $(RDIR)/rmprofiler/rmprofiler.o -o $(CHIP)/$@ $(LDFLAGS)
+
+# Not a target:
+/home/petej/repos/WhiteListForICS/common/utilities.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.780318625
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.620318627
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.510318627
+#  File has been updated.
+#  Successfully updated.
 
 .c.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 79):
+#  recipe to execute (from 'Makefile', line 79):
 	$(CC) $(CFLAGS) $< -c -o $@
-	
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/common/aerolock.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/petej/repos/WhiteListForICS/common/db.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.900318625
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha256.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/rmverify/rmverify.o:
+/home/petej/repos/WhiteListForICS/common/libcache.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
- 
-/Users/pjenney/Documents/GitHub/aerolock/common/mlocatecache.o:
+/home/petej/repos/WhiteListForICS/common/parse.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:36.010318624
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/petej/repos/WhiteListForICS/rmenforcer/rmenforcer.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-rmverify: /Users/pjenney/Documents/GitHub/aerolock/rmverify/rmverify.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hash.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hmac.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha1.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha2.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha256.o /Users/pjenney/Documents/GitHub/aerolock/common/signature.o /Users/pjenney/Documents/GitHub/aerolock/common/utilities.o /Users/pjenney/Documents/GitHub/aerolock/common/list.o /Users/pjenney/Documents/GitHub/aerolock/common/db.o /Users/pjenney/Documents/GitHub/aerolock/common/rbtree.o /Users/pjenney/Documents/GitHub/aerolock/common/parse.o /Users/pjenney/Documents/GitHub/aerolock/common/aerolock.h
+rmverify: /home/petej/repos/WhiteListForICS/rmverify/rmverify.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o /home/petej/repos/WhiteListForICS/common/signature.o /home/petej/repos/WhiteListForICS/common/utilities.o /home/petej/repos/WhiteListForICS/common/list.o /home/petej/repos/WhiteListForICS/common/db.o /home/petej/repos/WhiteListForICS/common/rbtree.o /home/petej/repos/WhiteListForICS/common/parse.o /home/petej/repos/WhiteListForICS/common/aerolock.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 98):
+#  recipe to execute (from 'Makefile', line 98):
 	$(CC) $(CFLAGS) $(OBJECTS) $(RDIR)/rmverify/rmverify.o -o $(CHIP)/$@ $(LDFLAGS)
 	
 
@@ -425,7 +448,7 @@ release:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 126):
+#  recipe to execute (from 'Makefile', line 126):
 	cp $(CHIP)/aerolockd         $(IDIR)/aerolockd
 	cp $(CHIP)/rmprofiler        $(IDIR)/rmprofiler
 	cp $(CHIP)/rmhmac            $(IDIR)/rmhmac
@@ -439,12 +462,14 @@ release:
 	echo stop on [!2345] >> $(IDIR)/aerolock.conf
 	echo respawn >> $(IDIR)/aerolock.conf
 	echo expect fork >> $(IDIR)/aerolock.conf
+	
 	echo exec /usr/local/bin/aerolockd --driver --test --threads 4  --delay 0 >> $(IDIR)/aerolock.conf
 	cp $(RDIR)/scripts/aerolock  $(IDIR)/aerolock
 	chmod +x $(IDIR)/aerolock
 	cd $(IDIR)
 	sudo $(IDIR)/rmhmac --replace $(IDIR)/aerolockd
 	cd ..
+	
 	
 
 # Not a target:
@@ -453,56 +478,40 @@ release:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/common/utilities.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha2.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 114):
+#  recipe to execute (from 'Makefile', line 114):
 	find . -type f -name \*.o -exec rm -f '{}' \;
 	find . -type f -name *~core -exec rm -f '{}' \;
 	rm -f $(RDIR)/install/*
 	rm -f $(RDIR)/x86/*
 	rm -f $(RDIR)/arm/*
-	
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/common/db.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/petej/repos/WhiteListForICS/common/rbtree.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.940318624
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/common/libcache.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/petej/repos/WhiteListForICS/common/signature.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.700318626
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/common/parse.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+/home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.460318628
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/rmenforcer/rmenforcer.o:
+/home/petej/repos/WhiteListForICS/rmhmac/rmhmac.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -511,56 +520,78 @@ deploy:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 159):
+#  recipe to execute (from 'Makefile', line 159):
 	sudo cp $(IDIR)/rm* /usr/local/bin
 	sudo cp $(IDIR)/aerolockd  /usr/local/bin
+	
 	sudo cp $(IDIR)/aerolock   /etc/init.d
+	
 	sudo insmod $(IDIR)/aerolock.ko
 	sudo $(IDIR)/aerolock_mkdrv.sh
+	
 	sudo update-rc.d aerolock defaults 58
-	
 
-rmsetup: /Users/pjenney/Documents/GitHub/aerolock/rmsetup/rmsetup.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hash.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hmac.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha1.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha2.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha256.o /Users/pjenney/Documents/GitHub/aerolock/common/signature.o /Users/pjenney/Documents/GitHub/aerolock/common/utilities.o /Users/pjenney/Documents/GitHub/aerolock/common/list.o /Users/pjenney/Documents/GitHub/aerolock/common/db.o /Users/pjenney/Documents/GitHub/aerolock/common/rbtree.o /Users/pjenney/Documents/GitHub/aerolock/common/parse.o /Users/pjenney/Documents/GitHub/aerolock/common/aerolock.h
+# Not a target:
+/home/petej/repos/WhiteListForICS/rmtools/rmdepends.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 86):
+
+ 
+rmsetup: /home/petej/repos/WhiteListForICS/rmsetup/rmsetup.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o /home/petej/repos/WhiteListForICS/common/signature.o /home/petej/repos/WhiteListForICS/common/utilities.o /home/petej/repos/WhiteListForICS/common/list.o /home/petej/repos/WhiteListForICS/common/db.o /home/petej/repos/WhiteListForICS/common/rbtree.o /home/petej/repos/WhiteListForICS/common/parse.o /home/petej/repos/WhiteListForICS/common/aerolock.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 86):
 	$(CC) $(CFLAGS) $(OBJECTS) $(RDIR)/rmsetup/rmsetup.o -o $(CHIP)/$@ $(LDFLAGS)
-	
 
-test_parser: /Users/pjenney/Documents/GitHub/aerolock/common/parse.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hash.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_hmac.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha1.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha2.o /Users/pjenney/Documents/GitHub/aerolock/NTRUEncrypt/src/ntru_crypto_sha256.o /Users/pjenney/Documents/GitHub/aerolock/common/signature.o /Users/pjenney/Documents/GitHub/aerolock/common/utilities.o /Users/pjenney/Documents/GitHub/aerolock/common/list.o /Users/pjenney/Documents/GitHub/aerolock/common/db.o /Users/pjenney/Documents/GitHub/aerolock/common/rbtree.o /Users/pjenney/Documents/GitHub/aerolock/common/parse.o /Users/pjenney/Documents/GitHub/aerolock/common/aerolock.h
+# Not a target:
+/home/petej/repos/WhiteListForICS/rmprofiler/rmprofiler.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.410318628
+#  File has been updated.
+#  Successfully updated.
+
+test_parser: /home/petej/repos/WhiteListForICS/common/parse.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hash.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_hmac.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_msbyte_uint32.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha1.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha2.o /home/petej/repos/WhiteListForICS/NTRUEncrypt/src/ntru_crypto_sha256.o /home/petej/repos/WhiteListForICS/common/signature.o /home/petej/repos/WhiteListForICS/common/utilities.o /home/petej/repos/WhiteListForICS/common/list.o /home/petej/repos/WhiteListForICS/common/db.o /home/petej/repos/WhiteListForICS/common/rbtree.o /home/petej/repos/WhiteListForICS/common/parse.o /home/petej/repos/WhiteListForICS/common/aerolock.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 83):
+#  recipe to execute (from 'Makefile', line 83):
 	$(CC) $(CFLAGS) -D__TEST_PARSER__ $(OBJECTS2) -o $(CHIP)/$@ $(LDFLAGS)
-	
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/common/rbtree.o:
+/home/petej/repos/WhiteListForICS/rmsetup/rmsetup.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-/Users/pjenney/Documents/GitHub/aerolock/common/signature.o:
+/home/petej/repos/WhiteListForICS/rmtools/rmstart.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+# Not a target:
+/home/petej/repos/WhiteListForICS/common/list.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-30 15:36:35.850318625
+#  File has been updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=43/1024=4%, Rehash=0, Collisions=0/168=0%
+# Load=43/1024=4%, Rehash=0, Collisions=0/178=0%
 # VPATH Search Paths
 
-# No `vpath' search paths.
+# No 'vpath' search paths.
 
-# No general (`VPATH' variable) search path.
+# No general ('VPATH' variable) search path.
 
-# # of strings in strcache: 1
-# # of strcache buffers: 1
-# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
-# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+# strcache buffers: 1 (0) / strings = 66 / storage = 1669 B / avg = 25 B
+# current buf: size = 8162 B / used = 1669 B / count = 66 / avg = 25 B
 
-# Finished Make data base on Mon Jun 27 08:42:09 2022
+# strcache performance: lookups = 185 / hit rate = 64%
+# hash-table stats:
+# Load=66/8192=1%, Rehash=0, Collisions=1/185=1%
+# Finished Make data base on Thu Jun 30 20:18:41 2022
 
  

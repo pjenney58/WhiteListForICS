@@ -29,7 +29,7 @@
 #include <sys/stat.h>
 #include <pthread.h>
 #include <db.h>
-
+ls /.
 #ifndef __QNX__
 #include <getopt.h>
 #endif
